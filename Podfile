@@ -1,9 +1,9 @@
-platform :ios, "6.0"
+platform :ios, "7.0"
 workspace 'GCMTemplateProject'
 xcodeproj 'GCMTemplateProject/GCMTemplateProject.xcodeproj'
 
 target :GCMTemplateProjectTests do
-  pod 'Kiwi', '2.2.0'
+  pod 'Kiwi/XCTest', '2.2.3'
 end
 
 podspec :path => 'GCMTemplateProject.podspec'
