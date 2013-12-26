@@ -6,7 +6,9 @@ A template project for creating public GCM* projects
 
 * Rename the project, targets, and folders
   * [How to duplicate a project](http://stackoverflow.com/questions/17744319/duplicate-and-rename-xcode-project-associated-folders)
-  * Update script/template.podspec.erb
+  * Update script/template.podspec.erb.
+    * Remember to update the description as CocoaPods will automatically tweet using this description.
+    * If you'd like, update the social_media_url to https://twitter.com/your-twitter-handle if you'd like to get @-mentioned when CocoaPods announces the library release.
   * Regenerate GCMTemplateProject.podspec. `ruby script/generate-podspec.rb 0.1.0 > GCMTemplateProject.podspec`
   * Rename GCMTemplateProject.podspec to match the name of your new repository.
   * Update the Podfile to use the up-to-date project and target names.
