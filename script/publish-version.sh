@@ -25,4 +25,9 @@ popd
 git tag -a $1 -m "Create tag"
 git push origin $1
 
-pod push gc_specs_mirror GCMTemplateProject.podspec
+# uncomment one of the pod commands depending on the type of project
+# pod trunk push is used for public projects
+#pod trunk push GCMTemplateProject.podspec
+# pod repo push is used for private projects
+#pod repo push gcspecs GCMTemplateProject.podspec
+
